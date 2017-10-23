@@ -13,13 +13,15 @@ public class Problem8
 			+ "0636899125607176060588611646710940507754100225698315520005593572972571636269561882670428252483600823257530420752963450";
 	long max = 0;
 	long hold = 1;
+
 	public Problem8()
 	{
 		for (int i = 0; i < nums.length() - 13; i++)
 		{
-			for(int j = 0; j < 13; j++)
+			for (int j = 0; j < 13; j++)
 			{
-				System.out.println("i = " + i + "j = " + j + "c = " + Integer.parseInt(nums.substring(i + j, i + j + 1)));
+				System.out
+						.println("i = " + i + "j = " + j + "c = " + Integer.parseInt(nums.substring(i + j, i + j + 1)));
 				hold = hold * Integer.parseInt(nums.substring(i + j, i + j + 1));
 				System.out.println(hold);
 			}
@@ -31,7 +33,8 @@ public class Problem8
 		}
 		System.out.println(max);
 	}
-	public static void main( String args[] )
+
+	public static void main(String args[])
 	{
 		new Problem8();
 	}
